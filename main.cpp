@@ -4,7 +4,7 @@
 void Menu(int a[], int &n);
 void NhapMangRanDom(int a[], int &n)
 {
-	printf("Chao\n");
+	printf("Chaosdfdsfd\n");
 	printf("Nhap so phan tu mang: ");
 	scanf("%d", &n);
 	srand(time(0));
