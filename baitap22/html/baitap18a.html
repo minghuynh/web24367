@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contain {
+            width: 70%;
+            height: auto;
+            margin: auto;
+            background-color: rgb(201, 170, 113);
+            padding: 10px;
+            box-shadow: 10px 10px 10px 10px rgb(73, 70, 70);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contain">
+        <form action="">
+            <h2 align="center">Survey Form</h2>
+            <p>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.</p>
+            <ol>
+                <li>
+                    <p>What is your name?</p><br>
+                    <input type="text" name="name" id="name" size="40">
+                </li>
+                <li>
+                    <p>What is your date of birth?</p><br>
+                    <span>Month:</span>
+                    <select name="thang" id="thang">
+                        <script>
+                            for(i=1;i<=12;i++){
+                                document.write("<option value='"+i+"'>"+i+"</option>")
+                            }
+                        </script>
+                    </select>
+                    <span>Date</span>
+                    <select name="date" id="date">
+                        <script>
+                            for(i=1;i<=31;i++){
+                                document.write("<option value='"+i+"'>"+i+"</option>")
+                            }
+                        </script>
+                    </select>
+                    <span>Year</span>
+                    <select name="year" id="year">
+                        <script>
+                            for(i=2022;i>=1999;i--){
+                                document.write("<option value='"+i+"'>"+i+"</option>")
+                            }
+                        </script>
+                    </select>
+                </li>
+                <li>
+                    <p>What is your mailing address</p>
+                    <input type="address" name="address" id="address">
+                </li>
+                <li>
+                    <p>What is your email address?</p>
+                    <input type="email" name="email" id="email">
+                </li>
+                <li>
+                    <p>Have you viewed our online product catalog?</p>
+                    <input type="radio" id="yes" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" value="no">
+                    <label for="no">No</label>
+                </li>
+                <li>
+                    <p>if so, what product, besides the one are ordering..</p>
+                    <input type="checkbox" name="VCR" value="VCR">
+                    <label for="VCR">VCR</label><br>
+                    <input type="checkbox" name="BST" value="Big Screen TV">
+                    <label for="BST">Bis Screen TV</label><br>
+                    <input type="checkbox" name="AE" value="Audio Equipment">
+                    <label for="AE">Audio Equipemnt</label><br>
+                    <input type="checkbox" name="VE" value="Video Equipment">
+                    <label for="VE">Video Equipemnt</label><br>
+                    <input type="checkbox" name="other">
+                    <label for="other">
+                        other
+                        <input type="text" name="listother">
+                    </label>
+                </li>
+                <li>
+                    <p>Do you have any questions, comments or suggestions before</p>
+                    <textarea id="area" name="area" rows="4" cols="50"></textarea>
+                </li>
+            </ol>
+            <input type="submit" id="submit" value="send form" style="margin-left: 60%;">
+            <input type="reset" id="reset" value="clear form">
+        </form>
+    </div>
+</body>
+
+</html>

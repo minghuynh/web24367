@@ -4,7 +4,7 @@
 body {    
     margin: 0;
     margin-top: -20px;
-    background: url('/anh/xe.jpg') no-repeat fixed center center;
+    background: url('/anh/room.jpg') no-repeat fixed center center;
     background-clip: border-box;
     background-size: 100vw 130vh;
 }

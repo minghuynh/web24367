@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    border: 1px solid black;
+}
+#header{
+    text-align: center;
+    height: 20vh;
+}
+#title{
+    height: 12vh;
+    padding-top: 5vh;
+}
+#nav{
+    height: 5vh;
+}
+li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 1.4vh;
+    float: left;
+    width: 20%;
+    text-align: center;
+    height: 5vh;
+}
+body{
+    background-image:url('/anh/bg.jpg');
+}
