@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change(state)
+        {
+            var x=document.getElementById("lamp");
+            x.src="../anh/lamp"+state+".png";
+            var y=document.getElementById("sttdiv");
+            y.innerHTML="the lamp is "+state;
+        }
+        function load()
+        {
+            var x=document.getElementById("lamp");
+            x.src="../anh/waiting.png";
+        }
+    </script>
+</head>
+<body onload="load()">
+    <img id="lamp" src="../anh/lampoff.png" onmouseover="change('on')" onmouseout="change('off')">
+    <h1 id="sttdiv"> 
+        <h2>fsdfs</h2>
+    </h1>
+</body>
+</html>

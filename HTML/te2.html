@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check()
+        {
+            var valid = true;
+            if (document.form1.firstname.value == "")
+            {
+               alert("Please type in your first name!");
+               document.getElementById("firstNameError").
+               style.display = "inline";
+               valid = false;
+            }
+            return valid;
+        }
+        /*for (i=1; i<=20; i++) 
+        {
+           var x = Math.random();
+           x = 10*x + 1;
+           x = Math.floor(x);
+           document.write("Random number("+ i+ ") in range " + "1..10 --> " + x + "<br/>");
+        }*/
+        var now = new Date();
+        var result = "It is now " + now;
+        document.getElementById("timeField").innerText = result;
+    </script>
+</head>
+<body>
+    <form name="form1" onsubmit="return check()">
+        <input type="text" name="firstname" style="position: relative;">
+        <input type="submit">
+    </form>
+    <div id="firstNameError" style="display:none;">
+        <h2 style="color: red;border: 1px solid black; position: absolute; padding:2px;">Nhap ten day du di thang ngu</h2>
+    </div>
+    <p id="timeField"></p>
+</body>
+</html>
